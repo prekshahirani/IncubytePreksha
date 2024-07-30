@@ -44,4 +44,10 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(add("5\n6,7\n8"), 26)
         self.assertEqual(add("//;\n9;10;11;12"), 42)
 if __name__ == '__main__':
+    print(add("1,2\n3"))
+    print(add("//;\n9;10;11;12"))
+    print(add("//;\n1;2;3;4"))
+    print(add(""))
+    print(add("2"))
+    # print(add("1,-2,-3"))
     unittest.main()
