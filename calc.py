@@ -1,13 +1,19 @@
 import unittest
 
 def add(numbers):
-    if not numbers:
-        return 0
-    numbers = numbers.replace("\n",",")
-    num_lst = numbers.split(",")
+    if numbers.startswith("//"):
+        d_line, numbers = numbers.split("\n",1)
+        delimiter = d_line[2:]
+    else:
+        delimiter = ","
+    
+    numbers = numbers.replace("\n", delimiter)
+    n_lst = numbers.split(delimiter)
     sum = 0
-    for i in num_lst:
-        sum += int(i)
+    for i in n_lst:
+        i = i.strip()
+        if i:
+            sum += int(i)
     return sum
 
 class TestCalc(unittest.TestCase):
@@ -21,5 +27,7 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(add("1,2,3,4"), 10)
     def test_new_lines(self):
         self.assertEqual(add("1\n2,3\n4"), 10)
+    def test_diff_delimiters(self):
+        self.assertEqual(add("//;\n1;2;3;4"), 10)
 if __name__ == '__main__':
     unittest.main()
