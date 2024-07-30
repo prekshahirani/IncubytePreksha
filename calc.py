@@ -3,6 +3,7 @@ import unittest
 def add(numbers):
     if not numbers:
         return 0
+    numbers = numbers.replace("\n",",")
     num_lst = numbers.split(",")
     sum = 0
     for i in num_lst:
@@ -18,5 +19,7 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(add("1,2"), 3)
     def test_multiple_input(self):
         self.assertEqual(add("1,2,3,4"), 10)
+    def test_new_lines(self):
+        self.assertEqual(add("1\n2,3\n4"), 10)
 if __name__ == '__main__':
     unittest.main()
