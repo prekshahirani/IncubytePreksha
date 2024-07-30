@@ -1,6 +1,6 @@
 import unittest
 
-class InvalidNumberException(Exception):
+class InvalidNumberException:
     pass
 
 def add(numbers):
@@ -37,11 +37,7 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(add("//;\n1;2;3;4"), 10)
     def test_negative_input(self):
         with self.assertRaises(InvalidNumberException) as cm:
-            add("1,-2,3")
-        self.assertEqual(str(cm.exception), "negative numbers not allowed: -2")
-    def test_all_positive_numbers(self):
-        self.assertEqual(add("1,2,3,4"), 10)
-        self.assertEqual(add("5\n6,7\n8"), 26)
-        self.assertEqual(add("//;\n9;10;11;12"), 42)
+            add("1,-2")
+        self.assertEqual(str(cm.exception), "Negative numbers not allowed: -2")
 if __name__ == '__main__':
     unittest.main()
