@@ -3,14 +3,19 @@ import unittest
 def add(numbers):
     if not numbers:
         return 0
-    return int(numbers)
+    num_lst = numbers.split(",")
+    sum = 0
+    for i in num_lst:
+        sum += int(i)
+    return sum
 
 class TestCalc(unittest.TestCase):
     def test_empty_input(self):
         self.assertEqual(add(""),0)
     def test_single_input(self):
-        self.assertEqual(add(""), 1)
+        self.assertEqual(add("1"), 1)
+    def test_two_input(self):
+        self.assertEqual(add("1,2"), 3)
 
 if __name__ == '__main__':
-    add(2)
     unittest.main()
