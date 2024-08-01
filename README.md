@@ -1,3 +1,26 @@
-This project implements a simple **String Calculator** according to Test-Driven Development(TDD) approach.
+# String Calculator TDD Kata
 
-The add method takes a string of comma-separated numbers (with support for different delimiters and new lines) and returns the sum of those numbers. It throww an exception with a message listing all negative numbers when any negative numbers are given.
+- This project implements a simple ***String Calculator*** according to Test-Driven Development(TDD) approach.
+- The add method takes a string of comma-separated numbers (with support for different delimiters and new lines) and returns the sum of those numbers.
+- Throws an exception with a message listing all negative numbers when any negative numbers are given.
+- Supports zero and single digit inputs.
+
+## Clone the repository
+   
+   https://github.com/prekshahirani/IncubytePreksha.git
+
+## Handling different input formats
+
+1. **Empty String :** Returns 0.
+
+2. **Single Digit :** Returns number.
+
+3. **Multiple Inputs :** Returns sum of the numbers.
+
+4. **New Line As Delimeter :** Returns sum of all the numbers.
+
+5. **Multiple Delimeters :** Handles many delimeters.
+
+6. **Negative Numbers :** Throws execption and list all the negative numbers.
+
+- Inputs are given in comma-seperated manner.
