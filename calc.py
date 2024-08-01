@@ -22,10 +22,12 @@ def add(numbers):
             sum += int(i)
     return sum
 
-print(add("")) #Output : 0
-print(add("2")) #Output : 2
-print(add("2,8")) #Output : 10
-print(add("1,2\n3")) #Output : 6
-print(add("//;\n9;10;11;12")) #Output : 42
-print(add("//;\n1;2;3;4")) #Output : 10
-# print(add("1,-2,-3")) #InvalidNumberException: negative numbers not allowed: -2, -3
+
+if __name__ == '__main__':
+    print(add("")) #Output : 0
+    print(add("2")) #Output : 2
+    print(add("2,8")) #Output : 10
+    print(add("1,2\n3")) #Output : 6
+    print(add("//;\n9;10;11;12")) #Output : 42
+    print(add("//;\n1;2;3;4")) #Output : 10
+    # print(add("1,-2,-3")) #InvalidNumberException: negative numbers not allowed: -2, -3
