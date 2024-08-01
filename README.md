@@ -11,16 +11,16 @@
 
 ## Handling different input formats
 
-1.**Empty String :** Return 0.
+1. **Empty String :** Returns 0.
 
-2.**Single Digit :** Return number.
+2. **Single Digit :** Returns number.
 
-3.**Multiple Inputs :** Return sum of the numbers.
+3. **Multiple Inputs :** Returns sum of the numbers.
 
-4.**New Line As Delimeter :** Return sum of all the numbers.
+4. **New Line As Delimeter :** Returns sum of all the numbers.
 
-5.**Multiple Delimeters :** Hadles many delimeters.
+5. **Multiple Delimeters :** Handles many delimeters.
 
-6.**Negative Numbers :** Throws execption and list all the negative numbers.
+6. **Negative Numbers :** Throws execption and list all the negative numbers.
 
 - Inputs are given in comma-seperated manner.
