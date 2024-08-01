@@ -21,6 +21,6 @@
 
 5.**Multiple Delimeters :** Hadles many delimeters.
 
-6.**Negative NUmbers :** Throws execption and list all the negative numbers.
+6.**Negative Numbers :** Throws execption and list all the negative numbers.
 
 - Inputs are given in comma-seperated manner.
