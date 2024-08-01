@@ -24,3 +24,22 @@
 6. **Negative Numbers :** Throws execption and list all the negative numbers.
 
 - Inputs are given in comma-seperated manner.
+
+## Code Format
+
+**Add Function :** add(str)
+
+**print(add(""))** #Output : 0
+
+**print(add("2"))** #Output : 2
+
+**print(add("2,8"))** #Output : 10
+
+**print(add("1,2\n3"))** #Output : 6
+
+**print(add("//;\n9;10;11;12"))** #Output : 42
+
+**print(add("//;\n1;2;3;4"))** #Output : 10
+
+**print(add("1,-2,-3"))** #InvalidNumberException: negative numbers not allowed: -2, -3
+
